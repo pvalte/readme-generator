@@ -1,6 +1,10 @@
 // TODO: Include packages needed for this application
+const fs = require('fs');
+const inquirer = require('inquirer');
 
 // TODO: Create an array of questions for user input
+// title, description, installation instructions, usage information, contribution guidelines, test instructions, 
+//select a license, github username, email address
 const questions = [];
 
 // TODO: Create a function to write README file
