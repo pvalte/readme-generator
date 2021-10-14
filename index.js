@@ -129,12 +129,6 @@ const questions = [
     }
 ];
 
-const promptUser = () => {
-    inquirer.prompt(questions)
-    .then(readmeData => {
-        console.log(readmeData);
-    });
-};
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -147,11 +141,11 @@ function writeToFile(fileName, data) {
     });
 }
 
-//const readmeData = promptUser();
-writeToFile('README.md', mockData)
+// TODO: Create a function to initialize app
+function init() {
+    inquirer.prompt(questions)
+    .then(readmeData => writeToFile('README.md', readmeData));
+}
 
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
+// Function call to initialize app
+init();
