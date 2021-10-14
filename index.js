@@ -1,6 +1,19 @@
 // TODO: Include packages needed for this application
-const fs = require('fs');
 const inquirer = require('inquirer');
+const fs = require('fs');
+const generateReadme = require('./src/readme-template.js');
+
+const mockData = {
+    title: 'readme-generator',
+    description: 'makes read meeeeeees',
+    instructions: 'do it right',
+    usage: 'use to make a wuality readme for your repo',
+    contribution: 'none',
+    test: 'test throughly',
+    license: [ 'CSS' ],
+    username: 'pvalte',
+    email: 'pvaltemare@gmail.com'
+};
 
 // TODO: Create an array of questions for user input 
 const questions = [
@@ -116,11 +129,29 @@ const questions = [
     }
 ];
 
+const promptUser = () => {
+    inquirer.prompt(questions)
+    .then(readmeData => {
+        console.log(readmeData);
+    });
+};
+
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    const readme = generateReadme(data);
+    
+    fs.writeFile(fileName, readme, err => {
+        if (err) throw new Error(err);
 
-// TODO: Create a function to initialize app
-function init() {}
+        console.log('Portfolio complete! Check out readme.md to see the output!');
+    });
+}
 
-// Function call to initialize app
-init();
+//const readmeData = promptUser();
+writeToFile('README.md', mockData)
+
+// // TODO: Create a function to initialize app
+// function init() {}
+
+// // Function call to initialize app
+// init();
