@@ -5,13 +5,13 @@ module.exports = readmeData => {
 
     ${readmeData.description}
 
-## Table of Contents
-    [Installation](#Installation)
-    [Usage](#Usage)
-    [Contributing](#Contributing)
-    [Tests](#Tests)
-    [License](#License)
-    [Questions](#Questions)
+* [Coding guidelines](https://github.com/microsoft/vscode/wiki/Coding-Guidelines)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Contributing](#Contributing)
+* [Tests](#Tests)
+* [License](#License)
+* [Questions](#Questions)
 
 ## Installation
 

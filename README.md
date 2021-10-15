@@ -4,13 +4,13 @@
 
     makes read meeeeeees. This repository ("`Code - OSS`") is where we (Microsoft) develop the product together with the community. Not only do we work on code and issues here, we also publish our. This source code is available to everyone under the standard. 
 
-## Table of Contents
-    [Installation](#Installation)
-    [Usage](#Usage)
-    [Contributing](#Contributing)
-    [Tests](#Tests)
-    [License](#License)
-    [Questions](#Questions)
+* [Coding guidelines](https://github.com/microsoft/vscode/wiki/Coding-Guidelines)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Contributing](#Contributing)
+* [Tests](#Tests)
+* [License](#License)
+* [Questions](#Questions)
 
 ## Installation
 
