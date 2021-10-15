@@ -1,33 +1,32 @@
+# readme-generator
 
-    # readme-generator
-
-    ## Description
+## Description
 
     makes read meeeeeees
 
-    ##Table of Contents
+##Table of Contents
 
-    ## Installation
+## Installation
 
     do it right
     
-    ## Usage
+## Usage
 
     use to make a wuality readme for your repo
     
-    ## Contributing
+## Contributing
 
     none
     
-    ## Tests
+## Tests
 
     test throughly
     
-    ## License
+## License
 
     CSS
         
-    ## Questions
+## Questions
 
     Github: https://github.com/pvalte
     Email: pvaltemare@gmail.com

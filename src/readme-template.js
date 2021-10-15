@@ -1,34 +1,33 @@
 module.exports = readmeData => {
-    return `
-    # ${readmeData.title}
+    return `# ${readmeData.title}
 
-    ## Description
+## Description
 
     ${readmeData.description}
 
-    ##Table of Contents
+## Table of Contents
 
-    ## Installation
+## Installation
 
     ${readmeData.instructions}
     
-    ## Usage
+## Usage
 
     ${readmeData.usage}
     
-    ## Contributing
+## Contributing
 
     ${readmeData.contribution}
     
-    ## Tests
+## Tests
 
     ${readmeData.test}
     
-    ## License
+## License
 
     ${readmeData.license}
         
-    ## Questions
+## Questions
 
     Github: https://github.com/${readmeData.username}
     Email: ${readmeData.email}
