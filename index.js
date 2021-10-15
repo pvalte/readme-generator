@@ -1,21 +1,9 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateReadme = require('./src/readme-template.js');
 
-const mockData = {
-    title: 'readme-generator',
-    description: 'makes read meeeeeees. This repository ("`Code - OSS`") is where we (Microsoft) develop the product together with the community. Not only do we work on code and issues here, we also publish our. This source code is available to everyone under the standard. ',
-    instructions: 'do it right. There are many ways in which you can participate in this project, for example: Submit bugs and feature requests, Review source code changes, Review the documentation. If you are interested in fixing issues and contributing directly to the code base, please see the document',
-    usage: 'use to make a qwuality readme for your repo. This repository includes a Visual Studio Code Remote - Containers / GitHub Codespaces development container.',
-    contribution: 'none There are many ways in which you can participate in this project, for example: Submit bugs and feature requests, Review source code changes, Review the documentation. If you are interested in fixing issues and contributing directly to the code base, please see the document',
-    test: 'test throughly e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques',
-    license: ['Mozilla Public License 2.0'],
-    username: 'pvalte',
-    email: 'pvaltemare@gmail.com'
-};
-
-// TODO: Create an array of questions for user input 
+// Array of questions for user input 
 const questions = [
     {
         type: 'input',
@@ -131,7 +119,7 @@ const questions = [
 ];
 
 
-// TODO: Create a function to write README file
+// Function to write README file
 function writeToFile(fileName, data) {
     const readme = generateReadme(data);
 
@@ -142,11 +130,10 @@ function writeToFile(fileName, data) {
     });
 }
 
-// TODO: Create a function to initialize app
+// Function to initialize app
 function init() {
     inquirer.prompt(questions)
-    .then(readmeData => writeToFile('README.md', readmeData));
-    //writeToFile('README.md', mockData);
+        .then(readmeData => writeToFile('README.md', readmeData));
 }
 
 // Function call to initialize app

@@ -32,7 +32,7 @@ ${generateLicenseBadge(readmeData.license)}
 
 ## Description
 
-    ${readmeData.description}
+${readmeData.description}
 
 ## Table of Contents
 
@@ -46,19 +46,19 @@ ${generateLicenseBadge(readmeData.license)}
 
 ## Installation
 
-    ${readmeData.instructions}
+${readmeData.instructions}
     
 ## Usage
 
-    ${readmeData.usage}
+${readmeData.usage}
     
 ## Contributing
 
-    ${readmeData.contribution}
+${readmeData.contribution}
     
 ## Tests
 
-    ${readmeData.test}
+${readmeData.test}
     
 ## License
 
@@ -68,5 +68,5 @@ Licensed under the [${readmeData.license}](LICENSE.txt) license.
 
 * View my Github at http://github.com/${readmeData.username}/
 * Please email any questions to ${readmeData.email}
-    `;
+`;
 };
