@@ -1,8 +1,11 @@
 # readme-generator
+[![AGPL]()](https://www.gnu.org/licenses/agpl-3.0.html)
 
 ## Description
 
     makes read meeeeeees. This repository ("`Code - OSS`") is where we (Microsoft) develop the product together with the community. Not only do we work on code and issues here, we also publish our. This source code is available to everyone under the standard. 
+
+## Table of Contents
 
 * [Coding guidelines](https://github.com/microsoft/vscode/wiki/Coding-Guidelines)
 * [Installation](#Installation)
@@ -30,10 +33,10 @@
     
 ## License
 
-    CSS
+Licensed under the [Mozilla Public License 2.0](LICENSE.txt) license.
         
 ## Questions
 
-    Github: http://github.com/pvalte/
-    Email: pvaltemare@gmail.com
+* View my Github at http://github.com/pvalte/
+* Please email any questions to  pvaltemare@gmail.com
     
