@@ -96,10 +96,11 @@ const questions = [
         }
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
         message: 'Select a license',
-        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense']
+        choices: ['None', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+        default: 'None'
     },
     {
         type: 'input',
@@ -143,9 +144,9 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    // inquirer.prompt(questions)
-    // .then(readmeData => writeToFile('README.md', readmeData));
-    writeToFile('README.md', mockData);
+    inquirer.prompt(questions)
+    .then(readmeData => writeToFile('README.md', readmeData));
+    //writeToFile('README.md', mockData);
 }
 
 // Function call to initialize app

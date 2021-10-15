@@ -28,7 +28,7 @@ const generateLicenseBadge = licenseText => {
 
 module.exports = readmeData => {
     return `# ${readmeData.title}
-${generateLicenseBadge(readmeData.license[0])}
+${generateLicenseBadge(readmeData.license)}
 
 ## Description
 
@@ -67,6 +67,6 @@ Licensed under the [${readmeData.license}](LICENSE.txt) license.
 ## Questions
 
 * View my Github at http://github.com/${readmeData.username}/
-* Please email any questions to  ${readmeData.email}
+* Please email any questions to ${readmeData.email}
     `;
 };
