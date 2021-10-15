@@ -6,6 +6,12 @@ module.exports = readmeData => {
     ${readmeData.description}
 
 ## Table of Contents
+    [Installation](#Installation)
+    [Usage](#Usage)
+    [Contributing](#Contributing)
+    [Tests](#Tests)
+    [License](#License)
+    [Questions](#Questions)
 
 ## Installation
 
@@ -29,7 +35,7 @@ module.exports = readmeData => {
         
 ## Questions
 
-    Github: https://github.com/${readmeData.username}
+    Github: http://github.com/${readmeData.username}/
     Email: ${readmeData.email}
     `;
 };

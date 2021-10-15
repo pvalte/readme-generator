@@ -5,12 +5,12 @@ const generateReadme = require('./src/readme-template.js');
 
 const mockData = {
     title: 'readme-generator',
-    description: 'makes read meeeeeees',
-    instructions: 'do it right',
-    usage: 'use to make a wuality readme for your repo',
-    contribution: 'none',
-    test: 'test throughly',
-    license: [ 'CSS' ],
+    description: 'makes read meeeeeees. This repository ("`Code - OSS`") is where we (Microsoft) develop the product together with the community. Not only do we work on code and issues here, we also publish our. This source code is available to everyone under the standard. ',
+    instructions: 'do it right. There are many ways in which you can participate in this project, for example: Submit bugs and feature requests, Review source code changes, Review the documentation. If you are interested in fixing issues and contributing directly to the code base, please see the document',
+    usage: 'use to make a qwuality readme for your repo. This repository includes a Visual Studio Code Remote - Containers / GitHub Codespaces development container.',
+    contribution: 'none There are many ways in which you can participate in this project, for example: Submit bugs and feature requests, Review source code changes, Review the documentation. If you are interested in fixing issues and contributing directly to the code base, please see the document',
+    test: 'test throughly e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques e are many ways in which you can participate in this project, for example: Submit bugs and feature reques',
+    license: ['CSS'],
     username: 'pvalte',
     email: 'pvaltemare@gmail.com'
 };
@@ -23,10 +23,10 @@ const questions = [
         message: 'What is the title of the repository? (Required)',
         validate: repoInput => {
             if (repoInput) {
-              return true;
+                return true;
             } else {
-              console.log('Please enter the repository title!');
-              return false;
+                console.log('Please enter the repository title!');
+                return false;
             }
         }
     },
@@ -36,10 +36,10 @@ const questions = [
         message: 'Enter the repository description: (Required)',
         validate: descriptionInput => {
             if (descriptionInput) {
-              return true;
+                return true;
             } else {
-              console.log('Please enter a description!');
-              return false;
+                console.log('Please enter a description!');
+                return false;
             }
         }
     },
@@ -49,10 +49,10 @@ const questions = [
         message: 'What are the installation instructions? (Required)',
         validate: instructionsInput => {
             if (instructionsInput) {
-              return true;
+                return true;
             } else {
-              console.log('Please enter the installation instructions!');
-              return false;
+                console.log('Please enter the installation instructions!');
+                return false;
             }
         }
     },
@@ -62,10 +62,10 @@ const questions = [
         message: 'Enter the usage information: (Required)',
         validate: usageInput => {
             if (usageInput) {
-              return true;
+                return true;
             } else {
-              console.log('Please enter usage information!');
-              return false;
+                console.log('Please enter usage information!');
+                return false;
             }
         }
     },
@@ -75,10 +75,10 @@ const questions = [
         message: 'Enter the contribution guidelines: (Required)',
         validate: contributionInput => {
             if (contributionInput) {
-              return true;
+                return true;
             } else {
-              console.log('Please enter the contribution guidelines!');
-              return false;
+                console.log('Please enter the contribution guidelines!');
+                return false;
             }
         }
     },
@@ -88,10 +88,10 @@ const questions = [
         message: 'Enter the test instructions: (Required)',
         validate: testInput => {
             if (testInput) {
-              return true;
+                return true;
             } else {
-              console.log('Please enter test instructions!');
-              return false;
+                console.log('Please enter test instructions!');
+                return false;
             }
         }
     },
@@ -107,10 +107,10 @@ const questions = [
         message: 'Enter your github username: (Required)',
         validate: usernameInput => {
             if (usernameInput) {
-              return true;
+                return true;
             } else {
-              console.log('Please enter your github username!');
-              return false;
+                console.log('Please enter your github username!');
+                return false;
             }
         }
     },
@@ -120,10 +120,10 @@ const questions = [
         message: 'Enter your email address: (Required)',
         validate: emailInput => {
             if (emailInput) {
-              return true;
+                return true;
             } else {
-              console.log('Please enter your email address!');
-              return false;
+                console.log('Please enter your email address!');
+                return false;
             }
         }
     }
@@ -133,7 +133,7 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     const readme = generateReadme(data);
-    
+
     fs.writeFile(fileName, readme, err => {
         if (err) throw new Error(err);
 
