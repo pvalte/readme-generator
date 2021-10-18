@@ -126,14 +126,14 @@ function writeToFile(fileName, data) {
     fs.writeFile(fileName, readme, err => {
         if (err) throw new Error(err);
 
-        console.log('Portfolio complete! Check out readme.md to see the output!');
+        console.log('README complete! Check out README.md to see the output!');
     });
 }
 
 // Function to initialize app
 function init() {
     inquirer.prompt(questions)
-        .then(readmeData => writeToFile('README.md', readmeData));
+        .then(readmeData => writeToFile('./dist/README.md', readmeData));
 }
 
 // Function call to initialize app
