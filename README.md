@@ -4,6 +4,11 @@
 ## Description
 
 Create custom README.md files for your project by filling out prompted questions
+Demo video: https://watch.screencastify.com/v/cz8WsN0a1NOW3bRMBtnN
+
+Sceenshot:
+![image](https://user-images.githubusercontent.com/86697117/137835816-6f04cbe8-7f56-405a-83a3-5f1851e31d36.png)
+
 
 ## Table of Contents
 
