@@ -1,9 +1,9 @@
-# bhbh
+# RunBuddy
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
 ## Description
 
-hjghjgcfx
+A website that offers fitness training services for runnings
 
 ## Table of Contents
 
@@ -17,19 +17,19 @@ hjghjgcfx
 
 ## Installation
 
-hjhhvngc
+No dependencies to install
     
 ## Usage
 
-fgcghcfgxg
+git clone
     
 ## Contributing
 
-gvhgghg
+please contact me before contributing
     
 ## Tests
 
-gjfgcfxfh
+npm test
     
 ## License
 
@@ -37,5 +37,5 @@ Licensed under the [The Unlicense](LICENSE.txt) license.
         
 ## Questions
 
-* View my Github at http://github.com/hjghjgj/
-* Please email any questions to jhkjhkj
+* View my Github at http://github.com/pvalte/
+* Please email any questions to pvaltemare@gmail.com
